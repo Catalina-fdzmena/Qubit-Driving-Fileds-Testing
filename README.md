@@ -18,7 +18,9 @@ $$
 
 Defined under our testing parameters as: 
 
-\[ \eta(t) = \frac{Zt}{\int_0^{t} \frac{ds}{\cos^2(\Omega_1s) + \kappa^2 \sin^2(\Omega_1s)}} \]
+$$
+\eta(t) = \frac{Zt}{\int_0^{t} \frac{ds}{\cos^2(\Omega_1s) + \kappa^2 \sin^2(\Omega_1s)}}
+$$
 
 <p align="left"> <img src="img\paperExamples\graficasPaper.png"/> </p>
 
