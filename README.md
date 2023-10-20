@@ -10,7 +10,7 @@ context of the nuclear magnetic resonance phenomenon.
 On the followign research we aim to obtain Case Ω(t) = Ω1: A Precessing Field with Oscillating Amplitude. 
 Modifying it's parameters and applying them to Ermakov Equation for obtain multiple behaviors on a Qbit oscilation. 
 
-![Graphications made on the paper](graficasPaper.png)
+<p align="left"> <img src="img\paperExamples\graficasPaper.png"/> </p>
 
 __________________________________________________________________________________________________________
 
