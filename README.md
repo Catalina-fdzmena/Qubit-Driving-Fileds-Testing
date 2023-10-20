@@ -11,9 +11,12 @@ On the followign research we aim to obtain Case Ω(t) = Ω1: A Precessing Fiel
 Modifying it's parameters and applying them to Ermakov Equation for obtain multiple behaviors on a Qbit oscilation. 
 
 On the following image we can figure multiple graphic representations using the driving field obtained for this case which is:
-\[ R(t) = -i g e^{i\delta \eta(t)} / \cos^2(\Omega_1 t) + \kappa^2 \sin^2(\Omega_1 t) \]]
 
-defined under out parameters as: 
+$$
+R(t) = -i g e^{i\delta \eta(t)} / \cos^2(\Omega_1 t) + \kappa^2 \sin^2(\Omega_1 t)
+$$
+
+Defined under our testing parameters as: 
 
 \[ \eta(t) = \frac{Zt}{\int_0^{t} \frac{ds}{\cos^2(\Omega_1s) + \kappa^2 \sin^2(\Omega_1s)}} \]
 
