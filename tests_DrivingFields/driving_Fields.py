@@ -11,13 +11,13 @@ import matplotlib.pyplot as plt
 g = 5
 delta = 4
 kappa = 0.6
-Omega1 = 10  # Valor de ejemplo para ∆
-t_max = 10    # Valor de ejemplo para el tiempo máximo
+Omega1 = 10  #Example ∆
+t_max = 10    #max time por integration
 
 # Calculation function of η(t)
 def eta(t):
     integral = 0
-    dt = 0.001  # Paso de integración
+    dt = 0.001  # Integration
     for s in np.arange(0, t, dt):
         integral += dt / (np.cos(Omega1 * s) ** 2 + kappa ** 2 * np.sin(Omega1 * s) ** 2)
     return integral
