@@ -29,7 +29,7 @@ def eta(t_values):
 # R(t) function
 def R(t_values):
     eta_t = eta(t_values)
-    return -1j * g * np.exp(1j * delta * eta_t) / (np.cos(Omega1 * t_values) ** 2) + kappa ** 2 * np.sin(Omega1 * t_values) ** 2
+    return -1j * g * np.exp(1j * delta * eta_t) / ((np.cos(Omega1 * t_values) ** 2) + kappa ** 2 * np.sin(Omega1 * t_values) ** 2)
 
 # Time values
 t_values = np.linspace(0, t_max, 1000)
@@ -48,3 +48,5 @@ plt.legend()
 plt.grid(True)
 plt.title('Comportamiento de ReR(t) e ImR(t)')
 plt.show()
+
+#Modify paramtric graphic for be on time disposition
