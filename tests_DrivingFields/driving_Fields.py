@@ -15,17 +15,21 @@ Omega1 = 10  #Example ∆
 t_max = 10    #max time por integration
 
 # Calculation function of η(t)
-def eta(t):
-    integral = 0
-    dt = 0.001  # Integration
-    for s in np.arange(0, t, dt):
-        integral += dt / (np.cos(Omega1 * s) ** 2 + kappa ** 2 * np.sin(Omega1 * s) ** 2)
+def eta(t_values):
+    dt = 0.001  # Paso de integración
+    integral = np.zeros_like(t_values)
+    
+    for i, t in enumerate(t_values):
+        s_values = np.linspace(0, t, int(t / dt))
+        integrand = 1 / (np.cos(Omega1 * s_values) ** 2 + kappa ** 2 * np.sin(Omega1 * s_values) ** 2)
+        integral[i] = np.trapz(integrand, dx=dt)
+    
     return integral
 
 # R(t) function
-def R(t):
-    eta_t = eta(t)
-    return -1j * g * np.exp(1j * delta * eta_t) / (np.cos(Omega1 * t) ** 2) + kappa ** 2 * np.sin(Omega1 * t) ** 2
+def R(t_values):
+    eta_t = eta(t_values)
+    return -1j * g * np.exp(1j * delta * eta_t) / (np.cos(Omega1 * t_values) ** 2) + kappa ** 2 * np.sin(Omega1 * t_values) ** 2
 
 # Time values
 t_values = np.linspace(0, t_max, 1000)
