@@ -1,4 +1,4 @@
-# Qubit Driving Fileds Testing
+# Qubit Driving Fields Testing
 
 Using the Hubbard representation for SU(2), we write the time-evolution operator of a
 two-level system in the disentangled form. This allows us to map the corresponding dynamical law
@@ -9,6 +9,13 @@ context of the nuclear magnetic resonance phenomenon.
 
 On the followign research we aim to obtain Case Ω(t) = Ω1: A Precessing Field with Oscillating Amplitude. 
 Modifying it's parameters and applying them to Ermakov Equation for obtain multiple behaviors on a Qbit oscilation. 
+
+On the following image we can figure multiple graphic representations using the driving field obtained for this case which is:
+\[ R(t) = -i g e^{i\delta \eta(t)} / \cos^2(\Omega_1 t) + \kappa^2 \sin^2(\Omega_1 t) \]]
+
+defined under out parameters as: 
+
+\[ \eta(t) = \frac{Zt}{\int_0^{t} \frac{ds}{\cos^2(\Omega_1s) + \kappa^2 \sin^2(\Omega_1s)}} \]
 
 <p align="left"> <img src="img\paperExamples\graficasPaper.png"/> </p>
 
