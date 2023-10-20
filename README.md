@@ -21,7 +21,7 @@ Defined under our testing parameters as:
 $$
 \eta(t) = {\int_0^{t} \frac{ds}{\cos^2(\Omega_1s) + \kappa^2 \sin^2(\Omega_1s)}}
 $$
-
+<br/>
 <p align="left"> <img src="img\paperExamples\graficasPaper.png"/> </p>
 
 __________________________________________________________________________________________________________
