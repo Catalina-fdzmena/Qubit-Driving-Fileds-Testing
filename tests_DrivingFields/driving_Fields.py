@@ -2,6 +2,7 @@
 Research: Qbit control for Quantum Computing 
 Driving Fields first tests for case Ω(t) = Ω1: A Precessing Field with Oscillating Amplitude
 Made on: 20/10/2023 by: Andrea Catalina Fernandez Mena
+Modified on: 26/10/2023 by: Andrea Catalina Fernandez Mena & Felix Abdiel Rodriguez
 """
 # Import libraries
 import numpy as np
