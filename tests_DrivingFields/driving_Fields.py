@@ -73,3 +73,14 @@ ax.set_zlabel('Im R(t)')
 plt.title('3D Plot of Re R(t) and Im R(t) vs. Time')
 
 plt.show()
+
+
+"""
+New study cases
+
+*What if K = -value
+*What behaviors do we get?
+*Create simulation on field behavior 
+*Studiar caso k= 1 y analizar inversión de población
+*How would behavior be on qbit with a constante driving field 
+"""
