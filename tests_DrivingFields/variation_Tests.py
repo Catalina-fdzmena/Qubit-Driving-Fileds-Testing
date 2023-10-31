@@ -17,9 +17,9 @@ from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 # Parameters
 g = math.sqrt(5)  #periodicity condition
 delta = 4 #Delta imaginario δ
-kappa = 0.6   #Tests parameters 
-Omega1 = 5  
+kappa = 0.6   #Tests parameters  
 t_max = 10  #Tests parameters 
+Omega1 = t_max/2
 
 # Calculation function of η(t)
 def eta(t_values):
