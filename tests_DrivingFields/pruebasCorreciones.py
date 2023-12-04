@@ -36,7 +36,7 @@ delta2 = 6
 delta3 = 2*math.sqrt(math.pi)
 
 #kappa
-kappa1 = 1.5
+kappa1 = 3
 #kappa1 = 0.6
 kappa2 = 3.1
 kappa3 = 0.8
@@ -183,8 +183,10 @@ def R(t_values):
 
 # P(t) Population inversion
 def P(time):
+    #test 03_12_2023
+    return ((4*(Omega1_1**2)*(np.cos(Omega1_1*time)**2)+4*Omega1_1*x1*np.cos(Omega1_1*time)*np.sin(Omega1_1*time)+(x1**2+delta1**2-4*g1**2)*np.sin(Omega1_1*time)**2)/(((4*(Omega1_1**2))*((np.cos(Omega1_1*time)**2)+(kappa1**2)*(np.sin(Omega1_1*time)**2)))))   
     #calculo original 
-    return ((4*(Omega1_1**2)*(np.cos(Omega1_1*time)**2)+(((delta1**2)-(4*(g1**2)))*(np.sin(Omega1_1*time)**2)))/(((4*(Omega1_1**2))*((np.cos(Omega1_1*time)**2)+(kappa1**2)*(np.sin(Omega1_1*time)**2)))))
+    #return ((4*(Omega1_1**2)*(np.cos(Omega1_1*time)**2)+(((delta1**2)-(4*(g1**2)))*(np.sin(Omega1_1*time)**2)))/(((4*(Omega1_1**2))*((np.cos(Omega1_1*time)**2)+(kappa1**2)*(np.sin(Omega1_1*time)**2)))))
     #Calculo modificado
     #return ((4*(Omega1_1**2)*(np.cos(Omega1_1*time)**2)+((-(x1**2+ 2*1j*x1*delta1 - delta1**2)-(4*(g1**2)))*(np.sin(Omega1_1*time)**2)))/(((4*(Omega1_1**2))*((np.cos(Omega1_1*time)**2)+(kappa1**2)*(np.sin(Omega1_1*time)**2)))))
         

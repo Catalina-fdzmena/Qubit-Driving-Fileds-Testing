@@ -28,7 +28,7 @@ from scipy.optimize import minimize
 g1 = 0.8
 
 #δ
-delta1 = 3
+delta1 = 10
 
 #kappa
 kappa1 = 1
@@ -66,7 +66,7 @@ def R(t_values):
 
 # P(t) Population inversion
 def P(time):
-    return ((-(x1**2+2*1j*x1*delta1-delta1**2)/4-g1**2)*(time**2)+1)/((Omega0**2)*(time**2)-(x1/2)*time+1)
+    return(np.exp((x1/Omega0)*np.arctan(Omega0*time))*((((x1**2*time**2+delta1**2*time**2)/4)+x1*time+1)*np.exp((-2*x1/Omega0)*np.arctan(Omega0*time)))-g1**2*time**2)/((Omega0**2)*(time**2)-(x1/2)*time+1)
             
 # Time values
 t_values = np.linspace(0, 10, 1000)
